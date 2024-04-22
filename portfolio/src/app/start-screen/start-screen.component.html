@@ -1,0 +1,53 @@
+<div class="main">
+    <div class="main-screen">
+        <div class="main-img">
+            <img class="photo" src="assets/photo.png">
+        </div>
+    </div>
+    <div class="hello-text">
+        <div class="hello-name-text">
+            <h2>Hello! I am Klinton</h2>
+        </div>
+        <div class="frontend-text">
+            <h1 class="frontend">FRONTEND</h1>
+            <h1 class="developer">DEVELOPER</h1>
+        </div>
+    </div>
+    <div class="navbar">
+        <div class="icon">
+            <img src="assets/icons/logo.png">
+        </div>
+        <div class="tabs">
+            <a href="#">About Me</a>
+            <a href="#skillstag">Skill Set</a>
+            <a href="#myworktag">My Work</a>
+        </div>
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <span style="font-size:30px;cursor:pointer" id="spanid" (click)="openNav()">&#9776;</span>
+        <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">Close</a>
+        <a (click)="closeNav()" href="#">About Me</a>
+        <a (click)="closeNav()" href="#skillstag">Skill Set</a>
+        <a (click)="closeNav()" href="#myworktag">My Work</a>
+      </div>
+    <div class="three-contact">
+        <a href="https://github.com/KlintonMita" target="blank"><img src="assets/icons/gh.png"></a>
+        <a href="#cont"><img src="assets/icons/eb.png"></a>
+        <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit" target="blank"><img src="assets/icons/lb.png"></a>
+    </div>
+    <div class="scroll">
+        <h2>Scroll</h2>
+    </div>
+    <div class="scroll-line">
+        <img src="assets/v1.png">
+    </div>
+    <div class="front-ball">
+        <img src="assets/e5.png">
+    </div>
+</div>
+<div class="my-work">
+    <app-my-work></app-my-work>
+</div>
+<div class="footer">
+    <app-footer></app-footer>
+</div>

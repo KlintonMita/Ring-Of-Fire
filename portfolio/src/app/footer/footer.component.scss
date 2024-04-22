@@ -1,0 +1,36 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #5988ff;
+    height: 400px;
+    display: flex;
+}
+
+.footer-2 {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: space-around;
+}
+
+.footer-icons {
+    gap: 30px;
+    display: flex;
+    
+    a:hover {
+        scale: 1.1;
+    }
+}
+
+@media (max-width: 1024px) {
+    .footer {
+        width: 100%;
+    }
+}
+
+@media (max-width: 431px) {
+    .footer-2 {
+        flex-direction: column;
+    }
+}

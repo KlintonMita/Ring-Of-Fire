@@ -1,0 +1,118 @@
+<div class="work-together">
+  <div class="two-parts">
+    <div class="lets-work">
+      <h1>Let's work together</h1>
+    </div>
+    <div class="explanation">
+      <img src="assets/e6.png" />
+      <h2>
+        I am a Front-end developer based in Osnabrück, Germany. I enjoy helping
+        designers and companies bring their ideas into real life. I am looking
+        forward to continuing my developer career with a job in a junior web
+        developer position. <br />
+        <br />
+        If you think I’d be a good match for your projects, contact me!
+      </h2>
+      <a href="#">Send a message</a>
+    </div>
+  </div>
+</div>
+<div class="skills">
+  <div class="skill-2">
+    <h1 id="skillstag">Skill Set</h1>
+    <div class="skill-img">
+      <div class="si2">
+        <img src="assets/icons/ang.png" />
+        <img src="assets/icons/htm.png" />
+        <img src="assets/icons/css.png" />
+        <img src="assets/icons/ts.png" />
+      </div>
+      <div class="si2">
+        <img src="assets/icons/js.png" />
+        <img src="assets/icons/ic.png" />
+        <img src="assets/icons/api.png" />
+        <img src="assets/icons/f9.png" />
+      </div>
+      <div class="si3">
+        <img src="assets/icons/ang.png" />
+        <img src="assets/icons/htm.png" />
+      </div>
+      <div class="si4">
+        <img src="assets/icons/css.png" />
+        <img src="assets/icons/ts.png" /> 
+      </div>
+      <div class="si5">
+        <img src="assets/icons/js.png" />
+        <img src="assets/icons/ic.png" />
+      </div>
+      <div class="si6">
+        <img src="assets/icons/api.png" />
+        <img src="assets/icons/f9.png" />
+      </div>
+    </div>
+  </div>
+</div>
+<div class="my-work">
+    <div class="my-work-ex">
+        <h1 id="myworktag">My work</h1>
+        <h2>Explore a selection of my work here - Interact with <br> projects to see my skills in action.</h2>
+    </div>
+    <div class="projects">
+        <div class="first-project">
+            <img src="assets/startscreen_1.png">
+            <div class="project-explaining">
+                <h2>Pollo Loco</h2>
+                <h3>JavaScript | HTML | CSS</h3>
+                <h4>Jump, run and throw game based on object-oriented approach. 
+                    Help Pepe to find coins and tabasco salsa to fight against the crazy hen.</h4>
+                <a href="https://github.com/KlintonMita/polloloco" target="blank">Github</a>
+            </div>
+        </div>
+        <div class="second-project">
+            <div class="project-explaining2">
+                <h2>Lieferando</h2>
+                <h3>JavaScript | HTML | CSS</h3>
+                <h4>A simple order restaurant based on Lieferando.</h4>
+                <a href="https://github.com/KlintonMita/liferando" target="blank" >Github</a>
+            </div>
+            <img src="assets/liferando.JPG">
+        </div>
+        <div class="third-project">
+            <img src="assets/liferando.JPG">
+            <div class="project-explaining3">
+                <h2>Simple CRM</h2>
+                <h3>Angular | Firebase</h3>
+                <h4>A very Simple Customer Relationship Management system working with CRUD functionality. </h4>
+                <a href="#" target="blank">Github</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="contact" id="cont">
+    <div class="contact-form">
+        <div class="contact-text">
+            <h1>Contact</h1>
+            <h2>Got a problem to solve?</h2>
+            <h3>Contact me through this form, I am interested 
+                in hearing from you, knowing your ideas and contributing to 
+                your projects with my work.</h3>
+            <h4>Need a Frontend developer? Contact me!</h4>
+            <img src="assets/e5.png">
+        </div>
+        <div class="input-form">
+          <form (ngSubmit)="onSubmit(form)" #form="ngForm">
+            <div>
+              <input type="text" id="name" placeholder="Your Name" name="name" [(ngModel)]="formData.name" required>
+            </div>
+            <div>
+              <input type="email" id="email" placeholder="Your Email Address" name="email" [(ngModel)]="formData.email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+            </div>
+            <div>
+              <textarea id="message" name="message" placeholder="Your Message" [(ngModel)]="formData.message" required></textarea>
+            </div>
+            <button type="submit" [disabled]="!form.valid">Submit</button>
+          </form>
+        </div>
+    </div>
+</div>
+
